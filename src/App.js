@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+import { useState, useEffect } from 'react';
 import './App.css';
-
+import Search from './components/Search';
+import Table from './components/Table';
+import Form from './components/Form';
 function App() {
+
+  const arr = [
+    
+  ]
+
+    const [transactions, setTransactions] = useState(arr)
+
+    
+
+
+    useEffect(()=> {
+      fetch("http://localhost:4001/transactions",{
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json"
+      }
+      }).then(response => response.json())
+      .then(data => {
+        setTransactions([...data])
+      })
+    }, [])
+
+    
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <Search transactions={transactions} setTransactions = {setTransactions} arr={arr} />
+      <Form transactions={transactions} setTransactions={setTransactions}/>
+      <Table transactions={transactions} setTransactions = {setTransactions} />
     </div>
   );
 }
