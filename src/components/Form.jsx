@@ -1,7 +1,6 @@
 import { useState } from "react"
 export default function Form({transactions, setTransactions}){
 
-    const today = new Date();
     const [formData, setFormData] = useState({
         date: "",
         description: "",
@@ -11,9 +10,8 @@ export default function Form({transactions, setTransactions}){
 
     function handleSubmit(event){
         event.preventDefault()
-        setTransactions([...transactions, formData])// listing transactions to the frontend
+        // setTransactions([...transactions, formData])// listing transactions to the frontend
         addTransaction(formData) // add a new transaction in DB
-
     }     
 
  function addTransaction(transaction){
