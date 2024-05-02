@@ -1,4 +1,4 @@
-export default function Search({transactions, setTransactions, arr}){
+export default function Search({transactions, setTransactions}){
 
     function handleChange(event){
         const hint = event.target.value
@@ -9,8 +9,6 @@ export default function Search({transactions, setTransactions, arr}){
             // if(filter.length > 0){
                 setTransactions([...filter])
             // }
-        }else{
-            setTransactions([...arr])
         }
     }
 
