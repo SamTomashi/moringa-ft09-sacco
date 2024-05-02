@@ -7,9 +7,9 @@ export default function Search({transactions, setTransactions}){
                 return transaction.description.toLowerCase().includes(hint.toLowerCase())
             })
             setTransactions([...filter])
-
-            console.log(filter)
         }
+
+        console.log(transactions)
     }
 
     return (

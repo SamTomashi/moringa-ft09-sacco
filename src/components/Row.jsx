@@ -10,9 +10,6 @@ export default function Row({transactions}){
                 <td>{transaction.category}</td>
                 <td>{transaction.amount}</td>
                 <td>
-                    <Button id={transaction.id}>
-                        <span>delete</span>
-                    </Button>
                     <NavLink className="btn btn-success btn-sm mx-2" to={`/transactions/${transaction.id}`}>
                         View
                     </NavLink>

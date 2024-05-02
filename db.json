@@ -1,18 +1,18 @@
 {
   "transactions": [
     {
-      "id": "3bd1",
-      "date": "2024-05-30",
-      "description": "Moringa`",
-      "category": "school",
-      "amount": "50000"
+      "id": "ee6f",
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": ""
     },
     {
-      "id": "1fd1",
-      "date": "2024-05-13",
-      "description": "birthday",
-      "category": "celebration",
-      "amount": "56575"
+      "id": "2ef3",
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": ""
     }
   ]
 }
