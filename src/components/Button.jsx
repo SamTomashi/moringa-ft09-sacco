@@ -9,7 +9,7 @@ export default function Button({children, id}){
             }
         }).then((response)=> response.json())
         .then((data)=> {
-            alert(`Transaction with id:${data.id} deleted successfully!`)
+            alert(`Transaction with id: ${data.id} deleted successfully!`)
         })
     }
 

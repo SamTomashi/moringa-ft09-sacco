@@ -1,4 +1,6 @@
 import { useState } from "react"
+import {addTransaction} from '../utils';
+
 export default function Form(){
 
     const [formData, setFormData] = useState({
@@ -12,16 +14,6 @@ export default function Form(){
         event.preventDefault()
         addTransaction(formData) // add a new transaction in DB
     }     
-
-    function addTransaction(transaction){
-        fetch("http://localhost:4001/transactions",{
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(transaction)
-        })
-    }
 
     function handleChange(event) {
         setFormData(
