@@ -1,4 +1,5 @@
 import Button from "./Button"
+import { Link, NavLink } from "react-router-dom"
 export default function Row({transactions}){
 
     const rows = transactions.map((transaction, index) => {
@@ -12,9 +13,9 @@ export default function Row({transactions}){
                     <Button id={transaction.id}>
                         <span>delete</span>
                     </Button>
-                    <a className="btn btn-success btn-sm mx-2" href="/transaction">
+                    <NavLink className="btn btn-success btn-sm mx-2" to={`/transactions/${transaction.id}`}>
                         View
-                    </a>
+                    </NavLink>
                 </td>
             </tr>
         )

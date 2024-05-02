@@ -1,11 +1,25 @@
 {
   "transactions": [
     {
-      "id": "b6f3",
-      "date": "2024-05-16",
-      "description": "Bolamu",
-      "category": "category",
-      "amount": "6768"
+      "id": "3bd1",
+      "date": "2024-05-30",
+      "description": "Moringa`",
+      "category": "school",
+      "amount": "50000"
+    },
+    {
+      "id": "1fd1",
+      "date": "2024-05-13",
+      "description": "birthday",
+      "category": "celebration",
+      "amount": "56575"
+    },
+    {
+      "id": "8b2d",
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": ""
     }
   ]
 }
