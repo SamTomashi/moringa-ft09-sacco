@@ -1,20 +1,6 @@
 {
   "transactions": [
     {
-      "id": "6eac",
-      "date": "2024-05-29",
-      "description": "Nairobi",
-      "category": "city",
-      "amount": "567575"
-    },
-    {
-      "id": "1cdc",
-      "date": "2024-05-23",
-      "description": "Gally",
-      "category": "Musician",
-      "amount": "56775"
-    },
-    {
       "id": "e5aa",
       "date": "2024-05-23",
       "description": "Gally",

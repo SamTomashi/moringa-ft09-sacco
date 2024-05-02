@@ -8,7 +8,9 @@ export default function Button({children, id}){
                 "Content-Type": "application/json"
             }
         }).then((response)=> response.json())
-        .then((data)=> console.log("transactions deleted"))
+        .then((data)=> {
+            alert(`Transaction with id:${data.id} deleted successfully!`)
+        })
     }
 
     return(
