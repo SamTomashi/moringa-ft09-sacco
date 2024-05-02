@@ -9,9 +9,12 @@ export default function Row({transactions, setTransactions}){
                 <td>{transaction.category}</td>
                 <td>{transaction.amount}</td>
                 <td>
-                    <Button index={index} setTransactions={setTransactions} transactions={transactions}>
+                    <Button id={transaction.id} setTransactions={setTransactions} transactions={transactions}>
                         <span>delete</span>
                     </Button>
+                    <a className="btn btn-success btn-sm mx-2" href="/transaction">
+                        View
+                    </a>
                 </td>
             </tr>
         )
