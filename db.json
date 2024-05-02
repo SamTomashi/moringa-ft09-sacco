@@ -1,53 +1,11 @@
 {
   "transactions": [
     {
-      "id": 1,
-      "date": "2021-07-01",
-      "description": "Salary",
-      "category": "Income",
-      "amount": 1000
-    },
-    {
-      "id": 2,
-      "date": "2021-07-02",
-      "description": "Salary",
-      "category": "Income",
-      "amount": 1000
-    },
-    {
-      "id": 3,
-      "date": "2021-07-03",
-      "description": "Salary",
-      "category": "Income",
-      "amount": 1000
-    },
-    {
-      "id": "cff4",
-      "date": "2024-05-07",
-      "description": "Moringa",
-      "category": "school",
-      "amount": "48987"
-    },
-    {
-      "id": "2eac",
-      "date": "2024-05-07",
-      "description": "Moringa",
-      "category": "school",
-      "amount": "48987"
-    },
-    {
-      "id": "1e0f",
-      "date": "2024-05-07",
-      "description": "Middlesex University",
-      "category": "Campus",
-      "amount": "45343"
-    },
-    {
-      "id": "8087",
-      "date": "2024-05-10",
-      "description": "kenya",
-      "category": "nairobi",
-      "amount": "1997193"
+      "id": "6eac",
+      "date": "2024-05-29",
+      "description": "Nairobi",
+      "category": "city",
+      "amount": "567575"
     }
   ]
 }
