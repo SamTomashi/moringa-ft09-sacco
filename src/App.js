@@ -3,33 +3,21 @@ import './App.css';
 import Search from './components/Search';
 import Table from './components/Table';
 import Form from './components/Form';
+import getTransactions from './utilities';
 function App() {
 
-  const arr = [
-    
-  ]
+  const [transactions, setTransactions] = useState([])
 
-    const [transactions, setTransactions] = useState(arr)
+  useEffect( ()=> {
+    getTransactions().then(data => {
+      setTransactions([...data])
+    })
+  }, [transactions])
 
-    
 
-
-    useEffect(()=> {
-      fetch("http://localhost:4001/transactions",{
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json"
-      }
-      }).then(response => response.json())
-      .then(data => {
-        setTransactions([...data])
-      })
-    }, [])
-
-    
   return (
     <div className='container'>
-      <Search transactions={transactions} setTransactions = {setTransactions} arr={arr} />
+      <Search transactions={transactions} setTransactions = {setTransactions} />
       <Form transactions={transactions} setTransactions={setTransactions}/>
       <Table transactions={transactions} setTransactions = {setTransactions} />
     </div>
@@ -37,3 +25,11 @@ function App() {
 }
 
 export default App;
+
+
+/**
+
+  1. Client-side rounting
+  2. SPA: Single Page Application
+  3. Webpack
+ */
