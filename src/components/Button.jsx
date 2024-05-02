@@ -1,4 +1,4 @@
-export default function Button({children, setTransactions, transactions, id}){
+export default function Button({children, id}){
 
     //Delete a transaction from the database
     function deleteTransaction(id){

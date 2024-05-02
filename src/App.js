@@ -18,8 +18,8 @@ function App() {
   return (
     <div className='container'>
       <Search transactions={transactions} setTransactions = {setTransactions} />
-      <Form transactions={transactions} setTransactions={setTransactions}/>
-      <Table transactions={transactions} setTransactions = {setTransactions} />
+      <Form/>
+      <Table transactions={transactions}/>
     </div>
   );
 }
@@ -27,9 +27,3 @@ function App() {
 export default App;
 
 
-/**
-
-  1. Client-side rounting
-  2. SPA: Single Page Application
-  3. Webpack
- */

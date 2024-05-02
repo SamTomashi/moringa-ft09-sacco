@@ -1,5 +1,5 @@
 import Button from "./Button"
-export default function Row({transactions, setTransactions}){
+export default function Row({transactions}){
 
     const rows = transactions.map((transaction, index) => {
         return(
@@ -9,7 +9,7 @@ export default function Row({transactions, setTransactions}){
                 <td>{transaction.category}</td>
                 <td>{transaction.amount}</td>
                 <td>
-                    <Button id={transaction.id} setTransactions={setTransactions} transactions={transactions}>
+                    <Button id={transaction.id}>
                         <span>delete</span>
                     </Button>
                     <a className="btn btn-success btn-sm mx-2" href="/transaction">

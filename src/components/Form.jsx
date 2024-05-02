@@ -1,5 +1,5 @@
 import { useState } from "react"
-export default function Form({transactions, setTransactions}){
+export default function Form(){
 
     const [formData, setFormData] = useState({
         date: "",
@@ -10,22 +10,18 @@ export default function Form({transactions, setTransactions}){
 
     function handleSubmit(event){
         event.preventDefault()
-        // setTransactions([...transactions, formData])// listing transactions to the frontend
         addTransaction(formData) // add a new transaction in DB
     }     
 
- function addTransaction(transaction){
-
-    fetch("http://localhost:4001/transactions",{
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(transaction)
-    })
-
-
- }
+    function addTransaction(transaction){
+        fetch("http://localhost:4001/transactions",{
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(transaction)
+        })
+    }
 
     function handleChange(event) {
         setFormData(

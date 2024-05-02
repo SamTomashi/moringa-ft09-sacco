@@ -6,9 +6,7 @@ export default function Search({transactions, setTransactions}){
             const filter = transactions.filter((transaction)=> {
                 return transaction.description.toLowerCase().includes(hint.toLowerCase())
             })
-            // if(filter.length > 0){
-                setTransactions([...filter])
-            // }
+            setTransactions([...filter])
         }
     }
 
