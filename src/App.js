@@ -5,11 +5,8 @@ import Table from './components/Table';
 import Form from './components/Form';
 import {getTransactions} from './utilities';
 import { Header } from './components/Header';
-import { Outlet, useNavigate} from "react-router-dom";
 
 function App() {
-
-  const navigate = useNavigate();
 
   const [transactions, setTransactions] = useState([])
 
