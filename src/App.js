@@ -3,7 +3,7 @@ import './App.css';
 import Search from './components/Search';
 import Table from './components/Table';
 import Form from './components/Form';
-import {getTransactions} from './utils';
+import {getTransactions} from './utilities';
 function App() {
 
   const [transactions, setTransactions] = useState([])

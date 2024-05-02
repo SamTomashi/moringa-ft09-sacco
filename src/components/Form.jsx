@@ -1,5 +1,5 @@
 import { useState } from "react"
-import {addTransaction} from '../utils';
+import {addTransaction} from '../utilities';
 
 export default function Form(){
 
