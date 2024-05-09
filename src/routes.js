@@ -1,5 +1,6 @@
 import App from "./App";
 import Home from "./components/Home";
+import Login from "./components/Login";
 import Transaction from "./components/Transaction";
 
 const routes = [
@@ -15,6 +16,11 @@ const routes = [
       {
         path: "/transactions/:id",
         element: <Transaction/>
+      },
+      {
+        path: "/login",
+        element: <Login/>
+
       }
     ]
 
