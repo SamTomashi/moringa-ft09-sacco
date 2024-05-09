@@ -5,6 +5,6 @@ export default function Button({children, handleClick, id}){
  
 
     return(
-        <button onClick={()=> handleClick(id)} className="btn btn-sm btn-danger mx-2">{children}</button>
+        <button onClick={()=> handleClick(id)} className="btn btn-sm btn-danger m-3">{children}</button>
     )
 }
